@@ -21,10 +21,10 @@ body{
     content: " ";
     margin-top: 20px;
     fill:#252525;
-    background-image: url(../img/tam.svg);
+    background-image: url(../img/tamn.svg);
     display: block;
     background-size:100% 100%px;
-    height:100px;
+    height:109px;
     width: 100%;
    
 }
@@ -62,12 +62,15 @@ body{
 /***  AREA PRINCIPAL ***/
 #area-principal{
     display: flex;
+   min-height: 65vh;
     
 }
-
+.ocult{
+    display: none;
+}
 
 /*** CARTAS ****/
-.cartas{
+.perguntas,.cartas,.cartas-retorno{
     width: 50%;
     padding:0 20px;
     text-align: center;
@@ -114,7 +117,7 @@ h3{
     transform: rotate(10deg)
 }
 
-.btn{
+.btn, .bt{
     display: inline-block;
     width: 140px;
     padding: 5px;
@@ -172,10 +175,14 @@ footer{
     #menu-links{
         flex-direction: column;
         text-align: center;
+        
     }
 
-    .cartas, .logo{
+    
+
+     .cartas, .logo{
         width: 100%;
+        
     
     }
 
@@ -185,8 +192,9 @@ footer{
         text-align: center;
         margin: 0 auto;
     }
-    .logo img{
-        
+   
+    .verso-cartas{
+        width: 45px;
     }
 
     .btn{
